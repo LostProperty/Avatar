@@ -13,6 +13,7 @@ requires = [
     'pyramid_chameleon',
     'pyramid_debugtoolbar',
     'waitress',
+    'requests==2.3.0',
     ]
 
 setup(name='Avatar',
