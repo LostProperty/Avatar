@@ -15,10 +15,9 @@ def get_youtube_avatar_url(username):
         return 'https://yt3.ggpht.com/-FN8ix3x-cCI/AAAAAAAAAAI/AAAAAAAAAAA/VK4OSAfDv3w/s77-c-k-no/photo.jpg'
 
 
-@view_config(route_name='home')
+@view_config(route_name='home', renderer='templates/mytemplate.pt')
 def home(request):
-    # TODO: render a simple template here. Explain what the project is about
-    pass
+    return {}
 
 
 @view_config(route_name='redirect_to_avatar')
